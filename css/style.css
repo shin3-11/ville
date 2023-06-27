@@ -1,0 +1,446 @@
+/* main */
+a{
+    text-decoration: none;
+    }
+.text-1{
+    color: #44A6FF;
+    }
+.text-2{
+    color: #E96B6B;
+    }
+.text-3{
+    color: #4AA48B;
+    }
+.text-4{
+    color: #E3871A;
+    }
+.bg-cream{
+    background-color: #fbfbfb;
+    }
+.bg-1{
+    background-color: #44A6FF;
+    }
+.bg-2{
+    background-color: #E96B6B;
+    }
+.bg-3{
+    background-color: #4AA48B;
+    }
+.bg-4{
+    background-color: #E3871A;
+    }
+.bc-1{
+    border: solid 2px #44A6FF;
+    }
+.bc-2{
+    border: solid 2px #E96B6B;
+    }
+.bc-3{
+    border: solid 2px #4AA48B;
+    }
+.bc-4{
+    border: solid 2px #E3871A;
+    }
+.bc-dark{
+    border: solid 2px black;
+    }
+.br-30{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    }
+.br-top{
+    border-radius: 25px 25px 0px 0px;
+    -webkit-border-radius: 25px 25px 0px 0px;
+    -moz-border-radius: 25px 25px 0px 0px;
+    -ms-border-radius: 25px 25px 0px 0px;
+    -o-border-radius: 25px 25px 0px 0px;
+    }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.h-75vh{
+    height:75vh
+    }
+.mw-75{
+    max-width: 75%;
+    margin: auto;
+    }
+
+
+/* section */
+.mv{
+    background-image: url(/img/Group\ 195.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 87vh;
+    }
+.text-mv1{
+    top: 20%;left: -15%;
+    }
+.text-mv2{
+    top: 35%;left: -5%;
+    }
+.mw-card{
+    max-width: 75%;
+    margin: auto;
+    background-color: white;
+    }
+.price-btn{
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    }
+
+
+/* menu */
+.menu1{
+    background-image: url(/img/Group\ 201.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 263px;
+    display: flex;
+    align-items: center;
+    }
+.menu1 a{
+    bottom: 0;
+    }
+.menu1 img{
+    bottom: 10%;
+    }
+.menu2{
+    background-image: url(/img/Group\ 209.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 263px;
+    display: flex;
+    align-items: center;
+    }
+.menu2 a{
+    bottom: 0;
+    }
+.menu2 img{
+    bottom: 10%;
+    }
+.menu3{
+    background-image: url(/img/Group\ 210.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 263px;
+    display: flex;
+    align-items: center;
+    }
+.menu3 a{
+    bottom: 0;
+    }
+.menu3 img{
+    bottom: 10%;
+    }
+
+/*========= ナビゲーションのためのCSS ===============*/
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+    top:0;
+    right: -135%;
+    width: 35%;
+    height: 100vh;/*ナビの高さ*/
+    background:#7B7B7B;
+    /*動き*/
+    transition: all 0.6s;
+    }
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    right: 0;
+    }
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 35%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    }
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    }
+/*リストのレイアウト設定*/
+#g-nav li{
+    list-style: none;
+    text-align: center;
+    }
+#g-nav li a{
+    color: #fff !important;
+    text-decoration: none;
+    padding:10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    }
+.bb-white{
+    border-bottom: solid 1px white;
+    }
+/*========= ボタンのためのCSS ===============*/
+.openbtn1{
+    position:absolute;
+    z-index: 9999;/*ボタンを最前面に*/
+    top:0%;
+    cursor: pointer;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background: none;
+    }
+/*×に変化*/
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #44A6FF;
+    width: 45%;
+    }
+.openbtn1 span:nth-of-type(1) {
+    top:15px;
+    }
+.openbtn1 span:nth-of-type(2) {
+    top:23px;
+    }
+.openbtn1 span:nth-of-type(3) {
+    top:31px;
+    }
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+    background-color: #fff;
+    }
+.openbtn1.active span:nth-of-type(2) {
+    opacity: 0;
+    }
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+    background-color: #fff;
+    }
+
+
+
+@media (max-width: 768px) {
+
+h2{
+    font-size: 1rem;
+    font-weight: bold;
+    }
+.mw-75{
+    max-width: 95%;
+    margin: auto;
+    }
+.mw-card{
+    max-width: 95%;
+    margin: auto;
+    background-color: white;
+    }
+.text-mv1{
+    top: -42vh;
+    left: 20vw;
+    font-size: 1rem;
+    font-weight: bold
+    }
+.text-mv2{
+    top: -20vh;
+    left: 30vw;
+    font-size: 1rem;
+    }
+
+/* menu */
+.menu1{
+    background-image: url(/img/Group\ 201.png);
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 263px;
+    display: flex;
+    align-items: center;
+    }
+.menu1 a{
+    bottom: -20px;
+    right: 0;
+    }
+.menu1 img{
+    bottom: 10%;
+    }
+.menu2{
+    background-image: url(/img/Group\ 209.png);
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 263px;
+    display: flex;
+    align-items: center;
+    }
+.menu2 a{
+    bottom: -20px;
+    right: 0;
+    }
+.menu2 img{
+    bottom: 10%;
+    }
+.menu3{
+    background-image: url(/img/Group\ 210.png);
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 263px;
+    display: flex;
+    align-items: center;
+    }
+.menu3 a{
+    bottom: -20px;
+    right: 0;
+    }
+.menu3 img{
+    bottom: 10%;
+    }
+
+    /*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+  top:0;
+    right: -120%;
+  width: 100%;
+    height: 100vh;/*ナビの高さ*/
+  background:#7B7B7B;
+    /*動き*/
+  transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    right: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+  list-style: none;
+  text-align: center;
+}
+
+#g-nav li a{
+  color: #fff !important;
+  text-decoration: none;
+  padding:10px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.bb-white{
+  border-bottom: solid 1px white;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1{
+  position:absolute;
+  z-index: 9999;/*ボタンを最前面に*/
+  top:0%;
+  cursor: pointer;
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  background: none;
+}
+
+/*×に変化*/
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #44A6FF;
+    width: 45%;
+  }
+
+.openbtn1 span:nth-of-type(1) {
+  top:15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top:31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+    background-color: #fff;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+    background-color: #fff;
+}
+}
