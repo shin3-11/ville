@@ -74,7 +74,7 @@ a{
 
 /* section */
 .mv{
-    background-image: url(/img/Group\ 195.png);
+    background-image: url(img/Group\ 195.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 87vh;
@@ -99,7 +99,7 @@ a{
 
 /* menu */
 .menu1{
-    background-image: url(/img/Group\ 201.png);
+    background-image: url(img/Group\ 201.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,7 +114,7 @@ a{
     bottom: 10%;
     }
 .menu2{
-    background-image: url(/img/Group\ 209.png);
+    background-image: url(img/Group\ 209.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,7 +129,7 @@ a{
     bottom: 10%;
     }
 .menu3{
-    background-image: url(/img/Group\ 210.png);
+    background-image: url(img/Group\ 210.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -278,7 +278,7 @@ h2{
 
 /* menu */
 .menu1{
-    background-image: url(/img/Group\ 201.png);
+    background-image: url(img/Group\ 201.png);
     background-position: 60%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,7 +294,7 @@ h2{
     bottom: 10%;
     }
 .menu2{
-    background-image: url(/img/Group\ 209.png);
+    background-image: url(img/Group\ 209.png);
     background-position: 60%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -310,7 +310,7 @@ h2{
     bottom: 10%;
     }
 .menu3{
-    background-image: url(/img/Group\ 210.png);
+    background-image: url(img/Group\ 210.png);
     background-position: 60%;
     background-repeat: no-repeat;
     background-size: cover;
